@@ -10,10 +10,10 @@ h5 {
 
 button {
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .text-input {
-  height: 2em;
   border: none;
   border-radius: 5px;
   background-color: #1b1e20;
@@ -62,14 +62,21 @@ body {
 
 .add-new-task > input {
   flex: 1 0 0;
+  color: #cecece;
+  font-size: 0.9em;
+  padding-left: 10px;
 }
 
 .add-btn {
-  background-color: transparent;
+  background-color: #cecece;
   border: none;
-  margin: 0;
+  margin: 0 0 0 5px;
   padding: 0;
   outline: none;
+}
+
+.add-btn svg {
+  color: #1b1e20;
 }
 
 #task-container > ul {

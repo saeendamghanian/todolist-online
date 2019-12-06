@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import AddBoxRoundedIcon from "@material-ui/icons/AddBoxRounded";
+import AddRoundedIcon from "@material-ui/icons/AddRounded";
 
 class AddTask extends React.Component {
   state = {
@@ -42,7 +42,7 @@ class AddTask extends React.Component {
         <label>
           <button onClick={this.addButtonClick} className="add-btn">
             <i>
-              <AddBoxRoundedIcon />
+              <AddRoundedIcon />
             </i>
           </button>
         </label>
