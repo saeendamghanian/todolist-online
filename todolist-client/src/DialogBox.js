@@ -9,7 +9,7 @@ const DialogBox = props => {
     let updateDate = new Date(Date.now()).toISOString();
 
     axios
-      .put(`http://localhost:4500/task/${id}`, {
+      .put(`https://sd-todolist-server.herokuapp.com/task/${id}`, {
         text: taskToUpdate.toString(),
         status: editedTask.status,
         created_date: updateDate

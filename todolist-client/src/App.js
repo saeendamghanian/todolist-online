@@ -31,7 +31,7 @@ class App extends React.Component {
 
   getDataFromDB = () => {
     axios
-      .get("http://localhost:4500/tasks")
+      .get("https://sd-todolist-server.herokuapp.com/tasks")
       .then(res => this.setState({ todos: res.data }));
   };
 

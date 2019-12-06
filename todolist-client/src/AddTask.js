@@ -10,7 +10,7 @@ class AddTask extends React.Component {
   addTaskToDB = task => {
     if (task !== null) {
       axios
-        .post("http://localhost:4500/tasks", {
+        .post("https://sd-todolist-server.herokuapp.com/tasks", {
           text: task.toString()
         })
         .then(res => {

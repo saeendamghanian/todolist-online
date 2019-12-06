@@ -6,7 +6,7 @@ const Item = props => {
 
   const deleteTask = id => {
     axios
-      .delete(`http://localhost:4500/task/${id}`)
+      .delete(`https://sd-todolist-server.herokuapp.com/task/${id}`)
       .then(res => {
         document.querySelector("#process-result").innerHTML = "Task deleted!";
       })
@@ -21,7 +21,7 @@ const Item = props => {
     statusToUpdate.status =
       statusToUpdate.status === "pending" ? "completed" : "pending";
     axios
-      .put(`http://localhost:4500/task/status/${id}`, {
+      .put(`https://sd-todolist-server.herokuapp.com/task/status/${id}`, {
         status: statusToUpdate.status.toString()
       })
       .then(res => {
