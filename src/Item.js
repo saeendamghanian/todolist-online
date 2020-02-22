@@ -44,7 +44,8 @@ const Item = props => {
             onChange={() => toggleComplete(id)}
           />
           <span className="custom-checkbox"></span>
-          {id} - {text} - {created_date} - {status}
+          {/* {id} -  */}
+          {text} - {/* {created_date} - */} {status}
         </label>
       </div>
       <div className="task-btns">

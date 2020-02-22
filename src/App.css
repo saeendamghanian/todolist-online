@@ -170,6 +170,10 @@ input.large-checkbox {
 
 #edit-dialog > input {
   width: 250px;
+  font-size: 0.9em;
+  padding-left: 10px;
+  height: 25px;
+  color: #cecece;
 }
 
 #dialog-bx-btns {
